@@ -17,7 +17,7 @@ const App = () =>{
           target="_blank"
           rel="noopener noreferrer"
         >
-          Репозиторий 
+           Репозиторий 
         </a>
       </header>
       <main>

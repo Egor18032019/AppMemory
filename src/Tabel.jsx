@@ -5,7 +5,6 @@ import {
 const Tabel = (props) => {
     const { dispatch, result } = props;
     const startGameMemmory = () => {
-        console.log("startGame")
         dispatch({
             type: STARTGAME,
         })

@@ -4,7 +4,7 @@ import Timer from "./Timer.jsx"
 import Tabel from "./Tabel.jsx"
 import LinesForCards from "./LinesForCards.jsx"
 import {
-    FINDTWOCARD, TWOCARDOPEN, STARTGAME, OPENCARD,WRITERESULT
+    FINDTWOCARD, TWOCARDOPEN, STARTGAME, OPENCARD, WRITERESULT
 } from "./CONST"
 import { DataContext, initialState, dataReducer } from "./DataReducer"
 
@@ -13,29 +13,26 @@ const MemoryCards = () => {
     const LIMITFORTIMEANSWER = 5;
     const [state, dispatch] = useReducer(dataReducer, initialState);
     let [itsTwoCardOpen, setTwoCardOpen] = useState(false);
-    const { startGame, endGame ,endGameAndSeeResult,result} = state;
+    const { startGame, endGame, endGameAndSeeResult, result } = state;
     let cardTime = state.firstcard != null
 
     const endTimeForAnswer = () => {
-        console.log("Таймер закончился")
         setTwoCardOpen(true)
     }
 
     const startGameMemmory = () => {
-        console.log("startGame")
         dispatch({
             type: STARTGAME,
         })
     }
-const seeResult =(time)=>{
-    dispatch({
-        type: WRITERESULT,
-        payload:time
-    })
-}
+    const seeResult = (time) => {
+        dispatch({
+            type: WRITERESULT,
+            payload: time
+        })
+    }
     if (startGame) {
         if (itsTwoCardOpen) {
-            console.log("ПРОШЕЛ таймер и пора закрывать карты или карту")
             setTwoCardOpen(false)
             if (state.secondcard != null) {
                 dispatch({
@@ -47,15 +44,13 @@ const seeResult =(time)=>{
                 dispatch({
                     type: OPENCARD,
                     payload: state.firstcard
-                })  
+                })
             }
         }
 
         if (state.firstcard != null && state.secondcard != null) {
-            console.log("открыто две карты")
 
             if (state.firstcard.title === state.secondcard.title) {
-                console.log("угадал. Две открытые карты одинаковы")
                 dispatch({
                     type: FINDTWOCARD,
                     payload: state.firstcard.title
@@ -70,8 +65,8 @@ const seeResult =(time)=>{
     if (endGameAndSeeResult) {
         return (
             <Tabel
-            dispatch={dispatch} 
-            result={result}
+                dispatch={dispatch}
+                result={result}
             />)
     }
     else {
@@ -83,7 +78,7 @@ const seeResult =(time)=>{
                             endTimeForAnswer={endTimeForAnswer}
                             limitForTime={LIMITFORTIMEANSWER}
                         />
-                        : `Найдите две одинаковые карт за - ${LIMITFORTIMEANSWER}секунд!`}
+                        : `Найдите две одинаковые карт за ${LIMITFORTIMEANSWER}секунд!`}
 
                     <LinesForCards />
                     <div>
@@ -92,7 +87,7 @@ const seeResult =(time)=>{
                                 <Timer
                                     seeResult={seeResult}
                                     endGame={endGame}
-                                /> секунд.
+                                /> секунд
                             </div>
                             :
                             <Button fullWidth={true}

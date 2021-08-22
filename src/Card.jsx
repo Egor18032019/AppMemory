@@ -5,7 +5,6 @@ import {
 const Card = (props) => {
     const { dispatch, card, startGame, secondcard } = props;
     const clickOnCard = () => {
-        console.log(card.id)
          if (startGame) {
             if (secondcard == null) {
                 dispatch({
@@ -18,7 +17,7 @@ const Card = (props) => {
             }
         }
     }
-    let icons = (<img src={`../img/${card.attributes.title}`} alt="Найди такую же" width="110" height="110" />)
+    let icons = (<img src={`../img/${card.attributes.title}`} alt={card.attributes.alt} width="95" height="95" />)
     let text = card.itOpen ? icons : "Переверни карту";
     if (card.itFind) {
         text = "Карта найдена!"

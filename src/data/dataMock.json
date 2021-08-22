@@ -5,7 +5,7 @@
         "id": 1,
         "attributes": {
           "title": "academy_brush.png",
-          "img": ""
+          "alt":"academy_brush"
          }
       }, 
       {
@@ -13,7 +13,7 @@
         "id": 2,
         "attributes": {
           "title": "book_note.png",
-          "img": 123
+          "alt":"book_note"
          }
       },
       {
@@ -21,14 +21,14 @@
         "id": 3,
         "attributes": {
          "title": "bus_school.png",
-          "img": 134
+          "alt":"bus_school"
          }
       },    {
         "type": "card",
         "id": 4,
         "attributes": {
           "title": "academic_clip.png",
-          "img": 134
+          "alt":"academic_clip"
          }
       },
       {
@@ -36,15 +36,15 @@
         "id": 5,
         "attributes": {
         "title": "apple_fruit.png",
-          "img": 134
+          "alt":"apple_fruit"
          }
       },
       {
         "type": "card",
         "id": 6,
         "attributes": {
-          "title": "6",
-          "img": 134
+          "title": "champion_trophy.png",
+          "alt":"champion_trophy"
          }
       },
       {
@@ -52,7 +52,7 @@
         "id": 7,
         "attributes": {
         "title": "bag_container.png",
-          "img": 134
+          "alt":"bag_container"
          }
       },
       {
@@ -60,7 +60,7 @@
         "id": 8,
         "attributes": {
          "title": "pen_pencil.png",
-          "img": 134
+          "alt":"pen_pencil"
          }
       },
       {
@@ -68,23 +68,23 @@
         "id": 9,
         "attributes": {
           "title": "board_class.png",
-          "img": 134
+          "alt":"board_class"
          }
       },
       {
         "type": "card",
         "id": 10,
         "attributes": {
-          "title": "10",
-          "img": 134
+          "title": "rocket_space_icon.png",
+          "alt":"rocket_space_icon"
          }
       },
       {
         "type": "card",
         "id": 11,
         "attributes": {
-      "title": "lab_school.png",
-          "img": 134
+          "title": "lab_school.png",
+          "alt":"lab_school"
          }
       },
       {
@@ -92,7 +92,7 @@
         "id": 12,
         "attributes": {
           "title": "paper_plane.png",
-          "img": 134
+          "alt":"paper_plane"
          }
       },
       {
@@ -100,7 +100,7 @@
         "id": 13,
         "attributes": {
          "title": "ruler_school.png",
-          "img": 134
+          "alt":"ruler_school"
          }
       },
       {
@@ -108,15 +108,15 @@
         "id": 14,
         "attributes": {
       "title": "alculator_math.png",
-          "img": 134
+          "alt":"alculator_math"
          }
       },
       {
         "type": "card",
         "id": 15,
         "attributes": {
-          "title": "15",
-          "img": 134
+          "title": "microscope_school.png",
+          "alt":"microscope_school"
          }
       },
       {
@@ -124,7 +124,7 @@
         "id": 16,
         "attributes": {
         "title": "academic_cap.png",
-          "img": 134
+          "alt":"academic_cap"
          }
       },
       {
@@ -132,7 +132,7 @@
         "id": 17,
         "attributes": {
          "title": "clock_stopwatch.png",
-          "img": 134
+          "alt":"clock_stopwatch"
          }
       },
       {
@@ -140,7 +140,7 @@
         "id": 18,
         "attributes": {
          "title": "earth_geograhy.png",
-          "img": 134
+          "alt":"описание"
          }
       },
       {
@@ -164,7 +164,7 @@
         "id": 21,
         "attributes": {
          "title": "bus_school.png",
-          "img": 134
+          "alt":"bus_school"
          }
       },   
        {
@@ -172,7 +172,7 @@
         "id":22,
         "attributes": {
           "title": "academic_clip.png",
-          "img": 134
+          "alt":"academic_clip"
          }
       },
       {
@@ -180,15 +180,15 @@
         "id": 23,
         "attributes": {
         "title": "apple_fruit.png",
-          "img": 134
+          "alt":"apple_fruit"
          }
       },
       {
         "type": "card",
         "id": 24,
         "attributes": {
-          "title": "6",
-          "img": 134
+          "title": "champion_trophy.png",
+          "alt":"champion_trophy"
          }
       },
       {
@@ -196,7 +196,7 @@
         "id": 25,
         "attributes": {
         "title": "bag_container.png",
-          "img": 134
+          "alt":"bag_container"
          }
       },
       {
@@ -204,7 +204,7 @@
         "id": 26,
         "attributes": {
          "title": "pen_pencil.png",
-          "img": 134
+          "alt":"описание"
          }
       },
       {
@@ -212,15 +212,15 @@
         "id": 27,
         "attributes": {
           "title": "board_class.png",
-          "img": 134
+          "alt":"описание"
          }
       },
       {
         "type": "card",
         "id": 28,
         "attributes": {
-          "title": "10",
-          "img": 134
+          "title": "rocket_space_icon.png",
+          "alt":"описание"
          }
       },
       {
@@ -228,7 +228,7 @@
         "id": 29,
         "attributes": {
       "title": "lab_school.png",
-          "img": 134
+          "alt":"lab_school"
          }
       },
       {
@@ -236,7 +236,7 @@
         "id": 30,
         "attributes": {
           "title": "paper_plane.png",
-          "img": 134
+          "alt":"paper_plane"
          }
       },
       {
@@ -244,7 +244,7 @@
         "id": 31,
         "attributes": {
          "title": "ruler_school.png",
-          "img": 134
+          "alt":"ruler_school"
          }
       },
       {
@@ -252,23 +252,23 @@
         "id": 32,
         "attributes": {
       "title": "alculator_math.png",
-          "img": 134
+          "alt":"alculator_math"
          }
       },
       {
         "type": "card",
         "id": 33,
         "attributes": {
-          "title": "15",
-          "img": 134
+          "title": "microscope_school.png",
+          "alt":"microscope_school"
          }
       },
       {
         "type": "card",
         "id": 34,
         "attributes": {
-        "title": "academic_cap.png",
-          "img": 134
+         "title": "academic_cap.png",
+         "alt":"academic_cap"
          }
       },
       {
@@ -276,7 +276,7 @@
         "id": 35,
         "attributes": {
          "title": "clock_stopwatch.png",
-          "img": 134
+         "alt":"clock_stopwatch"
          }
       },
       {
@@ -284,7 +284,7 @@
         "id": 36,
         "attributes": {
          "title": "earth_geograhy.png",
-          "img": 134
+         "alt":"earth_geograhy"
          }
       }
     ]
