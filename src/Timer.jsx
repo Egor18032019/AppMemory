@@ -32,7 +32,6 @@ const useInterval = (callback, delay, limitForTime, endTimeForAnswer) => {
       savedCallback.current();
       counter += 1;
       if (counter > 0 && counter === limitForTime) {
-        console.log('Done');
         clearInterval(intervalId);
         endTimeForAnswer()
       }

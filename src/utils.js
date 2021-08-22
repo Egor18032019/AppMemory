@@ -1,9 +1,21 @@
+//функции перемешивание
+const shuffle = function (arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        let num = Math.floor(Math.random() * (i + 1));
+        let d = arr[num];
+        arr[num] = arr[i];
+        arr[i] = d;
+    }
+    return arr;
+}
+
 /**
  *  @param {array} defaultCardArray массив с данным в ед-ном числе
  * @returns {array} Возвращает defaultCardArray массив разбитый на 6 массивов
  */
 const getArrayForLines = (defaultCardArray) => {
-    let cards = [].concat(defaultCardArray);
+    let oldCards = [].concat(defaultCardArray);
+    let cards =shuffle(oldCards)
     let bar = [];
     const getArrayForLines2 = () => {
         if (cards.length === 6) {
@@ -76,13 +88,12 @@ const findIndexInArrayForOpenForClose = (arr, card) => {
 }
 
 const findIndexInArrayForOpenTwoCard = (arr, arrIdForClose) => {
-    console.log("findIndexInArrayForOpenTwoCard")
     for (let value of arr) {
         value.forEach(elem => {
-        if(arrIdForClose.includes(elem.id)){
-            elem.itOpen = false
-        }
-    });
+            if (arrIdForClose.includes(elem.id)) {
+                elem.itOpen = false
+            }
+        });
     }
     return arr;
 }
@@ -91,7 +102,6 @@ const getWin = (arr) => {
     let isBigEnough = (element, index, array) => {
         let foo = element.every(
             (it) => {
-                console.log(it.id + " it.itFind === true " + (it.itFind === false) + " " + it.itFind)
                 return it.itFind === true
             });
         return foo
